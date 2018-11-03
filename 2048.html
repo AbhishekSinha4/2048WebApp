@@ -1,0 +1,89 @@
+<!-- NAME:  ABHISHEK SINHA
+USN: 01FB16ECS014
+TOPIC: 2048
+DESCRIPTION: This is a game based on the classic original 2048 app game. Aim of the game is to get the 2048 tile. 
+			   Swiping or using arrow keys causes tiles to move. Same numbered tiles merge to form a tile of the 
+			   next power of 2. 
+			   The game is responsive for laptop, pad and mobile devices, try changing the size of the window.-->
+			
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2048: The Game!</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/2048.css">
+</head>
+<body>
+<div id="wrapper">
+	<h1>2048</h1>
+	<div id="instruction-board">
+		<h2>Instructions</h2>
+		<ol>
+			<li>Aim: Get a 2048 tile.</li>
+			<li>Click Start to start.</li>
+			<li>Use ArrowKeys/Swipe to control.</li>
+			<li>You can Undo by a single move.</li>
+			<li>Game ends when board gets filled without possibility of unfilling.</li>
+		</ol>
+	</div>
+	<div id="stats">
+		<table>
+			<tr>
+				<td>Score:</td>
+				<td><span id="score">0</span></td>
+			</tr>
+			<tr>
+				<td>High Tile:</td>
+				<td><span id="max-tile">0</span></td>
+			</tr>
+		</table>
+	</div>
+</div>
+<div id="clearing"></div>
+<div id="game-in-this">
+	<div id="game-container">
+		<div id="buttons">
+			<button id="instructions">Instructions</button>
+			<button id="start">Start</button>
+			<button id="undo">Undo</button>
+		</div>
+		
+		<div id="game-board">
+			<table>
+				<tbody>
+					<tr id="row_0">
+						<td class="col_0 row_0 val_0" id="t_0"></td>
+						<td class="col_1 row_0 val_0" id="t_1"></td>
+						<td class="col_2 row_0 val_0" id="t_2"></td>
+						<td class="col_3 row_0 val_0" id="t_3"></td>
+					</tr>
+					<tr id="row_1">
+						<td class="col_0 row_1 val_0" id="t_4"></td>
+						<td class="col_1 row_1 val_0" id="t_5"></td>
+						<td class="col_2 row_1 val_0" id="t_6"></td>
+						<td class="col_3 row_1 val_0" id="t_7"></td>
+					</tr>
+					<tr id="row_2">
+						<td class="col_0 row_2 val_0" id="t_8"></td>
+						<td class="col_1 row_2 val_0" id="t_9"></td>
+						<td class="col_2 row_2 val_0" id="t_10"></td>
+						<td class="col_3 row_2 val_0" id="t_11"></td>
+					</tr>
+					<tr id="row_3">
+						<td class="col_0 row_3 val_0" id="t_12"></td>
+						<td class="col_1 row_3 val_0" id="t_13"></td>
+						<td class="col_2 row_3 val_0" id="t_14"></td>
+						<td class="col_3 row_3 val_0" id="t_15"></td>
+					</tr>
+				</tbody>
+			</table>
+			<div id="gameOver"><h2>Game Over!</h2></div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript" src="js/2048swipe.js"></script>
+</body>
+</html>
